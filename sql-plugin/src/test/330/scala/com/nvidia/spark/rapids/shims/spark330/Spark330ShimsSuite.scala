@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nvidia.spark.rapids.shims.spark330;
+package com.nvidia.spark.rapids.shims.spark330eep;
 
 import com.nvidia.spark.rapids.{ShimLoader, SparkShimVersion, TypeSig}
 import com.nvidia.spark.rapids.shims.SparkShimImpl
@@ -29,7 +29,7 @@ class Spark330ShimsSuite extends FunSuite {
 
   test("shuffle manager class") {
     assert(ShimLoader.getRapidsShuffleManagerClass ===
-      classOf[com.nvidia.spark.rapids.spark330.RapidsShuffleManager].getCanonicalName)
+      classOf[com.nvidia.spark.rapids.spark330eep.RapidsShuffleManager].getCanonicalName)
   }
 
   test("TypeSig330") {
