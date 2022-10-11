@@ -541,14 +541,14 @@
             </properties>
             <repositories>
                 <repository>
-                    <id>mapr_maven_snapshots_repo</id>
-                    <name>mapr maven snapshots repo</name>
-                    <url>https://df-mvn-stage.mip.storage.hpecorp.net/nexus/content/groups/public/</url>
+                    <id>mapr-repo</id>
+                    <name>MapR Repository</name>
+                    <url>${env.MAPR_MAVEN_REPO}</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
                     <snapshots>
-                        <enabled>false</enabled>
+                        <enabled>true</enabled>
                     </snapshots>
                 </repository>
             </repositories>
