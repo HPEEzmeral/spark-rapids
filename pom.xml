@@ -543,12 +543,12 @@
                 <repository>
                     <id>mapr_maven_snapshots_repo</id>
                     <name>mapr maven snapshots repo</name>
-                    <url>http://admin:admin123@df-mvn-dev.mip.storage.hpecorp.net/nexus/content/repositories/snapshots/</url>
+                    <url>https://df-mvn-stage.mip.storage.hpecorp.net/nexus/content/groups/public/</url>
                     <releases>
                         <enabled>true</enabled>
                     </releases>
                     <snapshots>
-                        <enabled>true</enabled>
+                        <enabled>false</enabled>
                     </snapshots>
                 </repository>
             </repositories>
