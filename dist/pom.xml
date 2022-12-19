@@ -608,7 +608,7 @@
                         </goals>
                         <configuration>
                             <file>${dist.jar.name}</file>
-                            <url>file://${java.io.tmpdir}/m2-repo</url>
+                            <url>${env.MAPR_MAVEN_REPO}</url>
                             <artifactId>${project.artifactId}</artifactId>
                             <classifier>${cuda.version}</classifier>
                             <groupId>${project.groupId}</groupId>
